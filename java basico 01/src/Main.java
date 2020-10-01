@@ -19,5 +19,6 @@ public class Main {
         Toolkit tk = Toolkit.getDefaultToolkit();
         Dimension tamanho = tk.getScreenSize();
         System.out.println("A tela possui Resolução de "+tamanho.width+" x "+tamanho.height+".");
+
     }
 }
