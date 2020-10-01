@@ -15,11 +15,13 @@ public class JogoAdvinhacao extends JDialog {
         setContentPane(contentPane);
         setModal(true);
         getRootPane().setDefaultButton(btnAdv);
+
         labelFrase.setText("<html>Vou pensar em um valor entre 1 e 5. Tente advinhar.</html>");
 
         btnAdv.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
+
                 //gerando numeros randomicos entre 1 e 5
                 double numRandom = 1 + Math.random() * (6 - 1);
                 int numero = (int) numRandom;
